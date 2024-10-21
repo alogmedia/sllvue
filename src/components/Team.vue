@@ -22,25 +22,25 @@ interface TeamProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "public/killix.webp",
+    imageUrl: "killix.webp",
     firstName: "Owner",
     lastName: "Killix",
     positions: ["The Leader of", "Scandinavian Let Loose"],
   },
   {
-    imageUrl: "public/killix.webp",
+    imageUrl: "killix.webp",
     firstName: "Owner",
     lastName: "Killix",
     positions: ["The Leader of", "Scandinavian Let Loose"],
   },
   {
-    imageUrl: "public/killix.webp",
+    imageUrl: "killix.webp",
     firstName: "Owner",
     lastName: "Killix",
     positions: ["The Leader of", "Scandinavian Let Loose"],
   },
   {
-    imageUrl: "public/killix.webp",
+    imageUrl: "killix.webp",
     firstName: "Owner",
     lastName: "Killix",
     positions: ["The Leader of", "Scandinavian Let Loose"],
