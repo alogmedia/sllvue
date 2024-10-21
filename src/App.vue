@@ -19,7 +19,7 @@ import Footer from "./components/Footer.vue";
 <template>
   <div class="video-container">
     <video autoplay muted loop id="background-video">
-      <source src="/public/moviebackground.mp4#t=4" type="video/mp4" />
+      <source src="/public/bgmovie.mp4#t=4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
   </div>
