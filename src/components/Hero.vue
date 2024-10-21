@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { useColorMode } from "@vueuse/core";
-const mode = useColorMode();
-
+/* import { useColorMode } from "@vueuse/core";
+ const mode = useColorMode();
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-vue-next";
+ */
+import { Button } from "@/components/ui/button";
 </script>
 
 <template>

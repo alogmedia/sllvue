@@ -1,28 +1,24 @@
 <script setup lang="ts">
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-  CardFooter,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from /*   CardFooter,
+ */ "@/components/ui/card";
 
-import LinkedInIcon from "@/icons/LinkedInIcon.vue";
+/* import LinkedInIcon from "@/icons/LinkedInIcon.vue";
 import GithubIcon from "@/icons/GithubIcon.vue";
 import XIcon from "@/icons/XIcon.vue";
-
+ */
 interface TeamProps {
   imageUrl: string;
   firstName: string;
   lastName: string;
   positions: string[];
-  socialNetworks: SocialNetworkProps[];
+  /*   socialNetworks: SocialNetworkProps[];
+   */
 }
 
-interface SocialNetworkProps {
+/* interface SocialNetworkProps {
   name: string;
   url: string;
-}
+} */
 
 const teamList: TeamProps[] = [
   {
@@ -51,7 +47,7 @@ const teamList: TeamProps[] = [
   },
 ];
 
-const socialIcon = (socialName: string) => {
+/* const socialIcon = (socialName: string) => {
   switch (socialName) {
     case "LinkedIn":
       return LinkedInIcon;
@@ -62,7 +58,7 @@ const socialIcon = (socialName: string) => {
     case "X":
       return XIcon;
   }
-};
+}; */
 </script>
 
 <template>
@@ -86,7 +82,8 @@ const socialIcon = (socialName: string) => {
           firstName,
           lastName,
           positions,
-          socialNetworks,
+          /*           socialNetworks,
+           */
         } in teamList"
         :key="imageUrl"
         class="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
@@ -116,7 +113,7 @@ const socialIcon = (socialName: string) => {
           {{ position }}<span v-if="index < positions.length - 1">,</span>
         </CardContent>
 
-        <CardFooter class="space-x-4 mt-auto">
+        <!--  <CardFooter class="space-x-4 mt-auto">
           <a
             v-for="{ name, url } in socialNetworks"
             key="name"
@@ -127,7 +124,7 @@ const socialIcon = (socialName: string) => {
           >
             <component :is="socialIcon(name)" />
           </a>
-        </CardFooter>
+        </CardFooter> -->
       </Card>
     </div>
   </section>

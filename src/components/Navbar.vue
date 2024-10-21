@@ -7,12 +7,12 @@ mode.value = "dark";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
+  /*   NavigationMenuContent,
+   */ NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+} from /*   NavigationMenuTrigger,
+ */ "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetContent,
@@ -25,8 +25,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-import { ChevronsDown, Menu } from "lucide-vue-next";
-import GithubIcon from "@/icons/GithubIcon.vue";
+/* import { ChevronsDown, Menu } from "lucide-vue-next";
+import GithubIcon from "@/icons/GithubIcon.vue";*/
 import ToggleTheme from "./ToggleTheme.vue";
 
 interface RouteProps {
@@ -34,10 +34,10 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
+/* interface FeatureProps {
   title: string;
   description: string;
-}
+} */
 
 const routeList: RouteProps[] = [
   {
@@ -58,7 +58,7 @@ const routeList: RouteProps[] = [
   },
 ];
 
-const featureList: FeatureProps[] = [
+/* const featureList: FeatureProps[] = [
   {
     title: "Showcase Your Value ",
     description: "Highlight how your product solves user problems.",
@@ -73,7 +73,7 @@ const featureList: FeatureProps[] = [
     description:
       "Make your lead capture form visually appealing and strategically.",
   },
-];
+]; */
 
 const isOpen = ref<boolean>(false);
 </script>
