@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight } from "lucide-vue-next";
  */
 import { Button } from "@/components/ui/button";
+import ServerDetails from "@/components/ui/server-details/serverDetails.vue";
 </script>
 
 <template>
@@ -49,8 +50,8 @@ import { Button } from "@/components/ui/button";
             >
           </Button>
         </div>
+        <ServerDetails />
       </div>
-
       <div class="relative group mt-14">
         <!-- gradient shadow -->
         <div
