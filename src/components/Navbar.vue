@@ -7,12 +7,12 @@ mode.value = "dark";
 
 import {
   NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
+  /*   NavigationMenuContent,
+   */ NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
+} from /*   NavigationMenuTrigger,
+ */ "@/components/ui/navigation-menu";
 import {
   Sheet,
   SheetContent,
@@ -25,8 +25,8 @@ import {
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
-import { ChevronsDown, Menu } from "lucide-vue-next";
-import GithubIcon from "@/icons/GithubIcon.vue";
+/* import { ChevronsDown, Menu } from "lucide-vue-next";
+import GithubIcon from "@/icons/GithubIcon.vue";*/
 import ToggleTheme from "./ToggleTheme.vue";
 
 interface RouteProps {
@@ -34,23 +34,23 @@ interface RouteProps {
   label: string;
 }
 
-interface FeatureProps {
+/* interface FeatureProps {
   title: string;
   description: string;
-}
+} */
 
 const routeList: RouteProps[] = [
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#features",
+    label: "How it works",
   },
   {
     href: "#team",
     label: "Team",
   },
   {
-    href: "#contact",
-    label: "Contact",
+    href: "#community",
+    label: "Community",
   },
   {
     href: "#faq",
@@ -58,7 +58,7 @@ const routeList: RouteProps[] = [
   },
 ];
 
-const featureList: FeatureProps[] = [
+/* const featureList: FeatureProps[] = [
   {
     title: "Showcase Your Value ",
     description: "Highlight how your product solves user problems.",
@@ -73,7 +73,7 @@ const featureList: FeatureProps[] = [
     description:
       "Make your lead capture form visually appealing and strategically.",
   },
-];
+]; */
 
 const isOpen = ref<boolean>(false);
 </script>
@@ -86,23 +86,14 @@ const isOpen = ref<boolean>(false);
       'w-[90%] md:w-[70%] lg:w-[75%] lg:max-w-screen-xl top-5 mx-auto sticky border z-40 rounded-2xl flex justify-between items-center p-2 bg-card shadow-md': true,
     }"
   >
-    <a
-      href="/"
-      class="font-bold text-lg flex items-center"
-    >
-      <ChevronsDown
-        class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
-      />
-      ShadcnVue</a
-    >
+    <a href="/">
+      <img src="/public/logo.png" width="300px" class="titlelogo"
+    /></a>
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">
       <Sheet v-model:open="isOpen">
         <SheetTrigger as-child>
-          <Menu
-            @click="isOpen = true"
-            class="cursor-pointer"
-          />
+          <Menu @click="isOpen = true" class="cursor-pointer" />
         </SheetTrigger>
 
         <SheetContent
@@ -112,15 +103,7 @@ const isOpen = ref<boolean>(false);
           <div>
             <SheetHeader class="mb-4 ml-4">
               <SheetTitle class="flex items-center">
-                <a
-                  href="/"
-                  class="flex items-center"
-                >
-                  <ChevronsDown
-                    class="bg-gradient-to-tr from-primary/70 via-primary to-primary/70 rounded-lg size-9 mr-2 border text-white"
-                  />
-                  ShadcnVue
-                </a>
+                <img src="/public/logo.png" width="250px" />
               </SheetTitle>
             </SheetHeader>
 
@@ -132,10 +115,7 @@ const isOpen = ref<boolean>(false);
                 variant="ghost"
                 class="justify-start text-base"
               >
-                <a
-                  @click="isOpen = false"
-                  :href="href"
-                >
+                <a @click="isOpen = false" :href="href">
                   {{ label }}
                 </a>
               </Button>
@@ -154,35 +134,6 @@ const isOpen = ref<boolean>(false);
     <!-- Desktop -->
     <NavigationMenu class="hidden lg:block">
       <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger class="bg-card text-base">
-            Features
-          </NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <div class="grid w-[600px] grid-cols-2 gap-5 p-4">
-              <img
-                src="https://www.radix-vue.com/logo.svg"
-                alt="Beach"
-                class="h-full w-full rounded-md object-cover"
-              />
-              <ul class="flex flex-col gap-2">
-                <li
-                  v-for="{ title, description } in featureList"
-                  :key="title"
-                  class="rounded-md p-3 text-sm hover:bg-muted"
-                >
-                  <p class="mb-1 font-semibold leading-none text-foreground">
-                    {{ title }}
-                  </p>
-                  <p class="line-clamp-2 text-muted-foreground">
-                    {{ description }}
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-
         <NavigationMenuItem>
           <NavigationMenuLink asChild>
             <Button
@@ -203,21 +154,6 @@ const isOpen = ref<boolean>(false);
 
     <div class="hidden lg:flex">
       <ToggleTheme />
-
-      <Button
-        as-child
-        size="sm"
-        variant="ghost"
-        aria-label="View on GitHub"
-      >
-        <a
-          aria-label="View on GitHub"
-          href="https://github.com/leoMirandaa/shadcn-vue-landing-page.git"
-          target="_blank"
-        >
-          <GithubIcon class="size-5" />
-        </a>
-      </Button>
     </div>
   </header>
 </template>
@@ -229,5 +165,9 @@ const isOpen = ref<boolean>(false);
 
 .shadow-dark {
   box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.141);
+}
+
+.titlelogo {
+  margin-left: 20px;
 }
 </style>

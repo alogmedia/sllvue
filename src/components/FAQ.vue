@@ -14,42 +14,36 @@ interface FAQProps {
 
 const FAQList: FAQProps[] = [
   {
-    question: "Is this template free?",
-    answer: "Yes. It is a free Shadcn/Vue template.",
+    question: "Can anyone join?",
+    answer: "Yes. Enlist on the discord and we will get back to you ASAP.",
     value: "item-1",
   },
   {
-    question: "Duis aute irure dolor in reprehenderit in voluptate velit?",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint labore quidem quam consectetur sapiente, iste rerum reiciendis animi nihil nostrum sit quo, modi quod.",
+    question: "What is the name of your server?",
+    answer: "Scandinavian Let Loose",
     value: "item-2",
   },
   {
-    question:
-      "Lorem ipsum dolor sit amet Consectetur natus dolor minus quibusdam?",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore qui nostrum reiciendis veritatis.",
+    question: "How often do you play?",
+    answer: "We try to seed the server every day at 19:00pm CET.",
     value: "item-3",
   },
   {
-    question: "Excepteur sint occaecat cupidata non proident sunt?",
-    answer: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    question: "What role can I play?",
+    answer:
+      "Anything, whatever you feel like, wether it is Armor Squad or Infantry, we have a spot for you.",
     value: "item-4",
   },
   {
-    question:
-      "Enim ad minim veniam, quis nostrud exercitation ullamco laboris?",
-    answer: "consectetur adipisicing elit. Sint labore.",
+    question: "Do you play competitively or just for fun?",
+    answer: "We play for fun, but we do have a competitive team.",
     value: "item-5",
   },
 ];
 </script>
 
 <template>
-  <section
-    id="faq"
-    class="container md:w-[700px] py-24 sm:py-32"
-  >
+  <section id="faq" class="container md:w-[700px] py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">FAQS</h2>
 
@@ -58,11 +52,7 @@ const FAQList: FAQProps[] = [
       </h2>
     </div>
 
-    <Accordion
-      type="single"
-      collapsible
-      class="AccordionRoot"
-    >
+    <Accordion type="single" collapsible class="AccordionRoot">
       <AccordionItem
         v-for="{ question, answer, value } in FAQList"
         :key="value"
@@ -76,14 +66,9 @@ const FAQList: FAQProps[] = [
 
     <h3 class="font-medium mt-4">
       Still have questions?
-      <a
-        href="#"
-        class="text-muted-foreground"
-      >
-        <a
-          href="#"
-          class="underline"
-          >Contact us</a
+      <a href="#" class="text-muted-foreground">
+        <a href="https://discord.gg/scanhll" class="underline"
+          >Join our discord!</a
         >
       </a>
     </h3>
