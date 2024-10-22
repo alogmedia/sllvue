@@ -19,7 +19,8 @@ import { Button } from "@/components/ui/button";
           <h1>
             Scandinavian
             <span
-              class="text-transparent bg-gradient-to-r from-[#facc15] to-primary bg-clip-text -webkit-background-clip-text"
+              class="text-transparent bg-gradient-to-r from-[#facc15] to-primary bg-clip-text"
+              style="color: #facc15"
               >Let Loose
             </span>
           </h1>
