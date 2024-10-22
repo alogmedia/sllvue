@@ -25,25 +25,13 @@ const teamList: TeamProps[] = [
     imageUrl: "killix.webp",
     firstName: "Owner",
     lastName: "Killix",
-    positions: ["The Leader of", "Scandinavian Let Loose"],
+    positions: ["Leader of", "Scandinavian Let Loose"],
   },
   {
-    imageUrl: "killix.webp",
+    imageUrl: "bartolle.webp",
     firstName: "Owner",
-    lastName: "Killix",
-    positions: ["The Leader of", "Scandinavian Let Loose"],
-  },
-  {
-    imageUrl: "killix.webp",
-    firstName: "Owner",
-    lastName: "Killix",
-    positions: ["The Leader of", "Scandinavian Let Loose"],
-  },
-  {
-    imageUrl: "killix.webp",
-    firstName: "Owner",
-    lastName: "Killix",
-    positions: ["The Leader of", "Scandinavian Let Loose"],
+    lastName: "bartolle",
+    positions: ["Leader of", "Scandinavian Let Loose"],
   },
 ];
 
@@ -74,7 +62,8 @@ const teamList: TeamProps[] = [
     </div>
 
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-16"
+      style="display: flex; justify-content: center"
     >
       <Card
         v-for="{
