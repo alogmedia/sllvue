@@ -11,11 +11,18 @@
 <script setup lang="ts">
 import { ref, computed, onMounted } from "vue";
 
+interface ServerDetails {
+  name: string;
+  players: number;
+  maxPlayers: number;
+  [key: string]: any;
+}
+
 // Reactive reference for the server data
-const server = ref(null);
+const server = ref<ServerDetails | null>(null);
 
 // Helper function to format server name by removing URLs
-const formatServerName = (name) => {
+const formatServerName = (name: string): string => {
   const urlRegex = /https?:\/\/[^\s]+/;
   return name.replace(urlRegex, "").trim();
 };
@@ -41,7 +48,7 @@ const fetchServerDetails = () => {
 // Computed property to determine the player count color
 const playerCountColor = computed(() => {
   if (!server.value) return "";
-  const players = server.value.players;
+  const players = server.value?.players;
   if (players <= 25) {
     return "red";
   } else if (players <= 50) {
