@@ -11,28 +11,28 @@ interface HowItWorksProps {
 
 const HowItWorksList: HowItWorksProps[] = [
   {
-    badgeTitle: "Contribute",
+    badgeTitle: "1",
     title: "Make a Difference with Every Contribution",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
     image: "soldier.svg",
   },
   {
-    badgeTitle: "Discover",
+    badgeTitle: "2",
     title: "Create an Impact with Every Choice",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
     image: "soldier7.svg",
   },
   {
-    badgeTitle: "Innovate",
+    badgeTitle: "3",
     title: "Make Every Action Count",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
     image: "soldier6.svg",
   },
   {
-    badgeTitle: "Collaborate",
+    badgeTitle: "4",
     title: "Tackle this challenge together",
     description:
       "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
