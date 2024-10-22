@@ -38,7 +38,11 @@ import DiscordIcon from "@/icons/DiscordIcon.vue";
 
           <CardFooter>
             <Button as-child>
-              <a href="https://discord.gg/scanhll" target="_blank">
+              <a
+                href="https://discord.gg/scanhll"
+                target="_blank"
+                style="color: #000"
+              >
                 Join Discord
               </a>
             </Button>
