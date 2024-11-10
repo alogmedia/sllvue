@@ -86,7 +86,7 @@ import icon from "@/assets/icon.ico";
 
       <Separator class="my-6" />
       <section className="">
-        <h3 class="">&copy; 2024 Scandinavian Let Loose All rights reserved</h3>
+        <h3 class="">&copy; 2024 Scandinavian Let Loose</h3>
       </section>
     </div>
   </footer>
