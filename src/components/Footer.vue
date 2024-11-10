@@ -1,6 +1,6 @@
 <script setup lang="ts">
-/* import { ChevronsDown } from "lucide-vue-next";
- */ import Separator from "./ui/separator/Separator.vue";
+import { ChevronsDown } from "lucide-vue-next";
+import Separator from "./ui/separator/Separator.vue";
 </script>
 
 <template>
@@ -9,65 +9,58 @@
       <div
         class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8"
       >
-        <!-- <div class="col-span-full xl:col-span-2">
+        <div class="col-span-full xl:col-span-2">
           <a href="#" class="flex font-bold items-center">
-            <ChevronsDown
-              class="bg-gradient-to-tr from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 border text-white"
+            <img
+              src="/src/assets/icon.ico"
+              class="from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 text-white"
             />
 
-            <h3 class="text-2xl">Shadcn-Vue</h3>
+            <h3 class="text-2xl">Scandinavian Let Loose</h3>
           </a>
         </div>
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Contact</h3>
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Github </a>
-          </div>
-
-          <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Twitter </a>
-          </div>
-
-          <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Instagram </a>
+            <a
+              href="https://discord.gg/scanhll"
+              class="opacity-60 hover:opacity-100"
+            >
+              Discord
+            </a>
           </div>
         </div>
 
         <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Platforms</h3>
+          <h3 class="font-bold text-lg">Server</h3>
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> iOS </a>
-          </div>
-
-          <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Android </a>
-          </div>
-
-          <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Web </a>
+            <a
+              href="https://www.battlemetrics.com/servers/hll/22151086"
+              class="opacity-60 hover:opacity-100"
+            >
+              SLL BattleMetrics
+            </a>
           </div>
         </div>
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Help</h3>
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Contact Us </a>
+            <a href="#community" class="opacity-60 hover:opacity-100">
+              Join Us
+            </a>
           </div>
 
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> FAQ </a>
-          </div>
-
-          <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Feedback </a>
+            <a href="#faq" class="opacity-60 hover:opacity-100"> FAQ </a>
           </div>
         </div>
 
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Socials</h3>
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Twitch </a>
+            <a href="#" class="opacity-60 hover:opacity-100"> TikTok </a>
           </div>
 
           <div>
@@ -75,24 +68,15 @@
           </div>
 
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Dribbble </a>
+            <a href="#" class="opacity-60 hover:opacity-100"> YouTube </a>
           </div>
-        </div>-->
+        </div>
       </div>
 
       <Separator class="my-6" />
-      <!--  <section className="">
-        <h3 class="">
-          &copy; 2024 Designed and developed by
-          <a
-            target="_blank"
-            href="https://github.com/leoMirandaa"
-            className="text-primary transition-all border-primary hover:border-b-2"
-          >
-            Leo Miranda
-          </a>
-        </h3>
-      </section> -->
+      <section className="">
+        <h3 class="">&copy; 2024 Scandinavian Let Loose All rights reserved</h3>
+      </section>
     </div>
   </footer>
 </template>

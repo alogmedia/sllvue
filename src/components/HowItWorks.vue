@@ -12,31 +12,31 @@ interface HowItWorksProps {
 const HowItWorksList: HowItWorksProps[] = [
   {
     badgeTitle: "1",
-    title: "Make a Difference with Every Contribution",
+    title: "Make a Difference with Every Deployment",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "soldier.svg",
+      "In Hell Let Loose it is important to make a difference with every deployment. We are a community that values teamwork and communication.",
+    image: "/src/assets/soldier.svg",
   },
   {
     badgeTitle: "2",
     title: "Create an Impact with Every Choice",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, sint reiciendis quidem iure veritatis optio facere tenetur.",
-    image: "soldier7.svg",
+      "You can have an impact with every choice you make, whether it is choosing the right class, the right weapon, or the right strategy.",
+    image: "/src/assets/soldier7.svg",
   },
   {
     badgeTitle: "3",
-    title: "Make Every Action Count",
+    title: "Communicate and Coordinate",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, odit similique quasi sint.",
-    image: "soldier6.svg",
+      "Communication is key in Hell Let Loose. We try to communicate when we play together and share tips and tricks to the best of our ability.",
+    image: "/src/assets/soldier.svg",
   },
   {
     badgeTitle: "4",
-    title: "Tackle this challenge together",
+    title: "Learn and Improve",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem fugiat, quasi sint reiciendis quidem iure.",
-    image: "soldier5.svg",
+      "Wether you are a new player or a veteran, we are always looking for ways to improve our gameplay and our community. Anyone is welcome to join us.",
+    image: "/src/assets/soldier7.svg",
   },
 ];
 </script>
@@ -75,7 +75,7 @@ const HowItWorksList: HowItWorksProps[] = [
             </CardTitle>
           </CardHeader>
 
-          <CardContent class="text-muted-foreground w-[80%]">
+          <CardContent class="text-muted-foreground w-[100%]">
             {{ description }}
           </CardContent>
         </Card>
