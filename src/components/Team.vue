@@ -16,13 +16,13 @@ const teamList: TeamProps[] = [
     imageUrl: killixImage,
     firstName: "Owner",
     lastName: "Killix",
-    positions: ["Leader of", "Scandinavian Let Loose"],
+    positions: ["Leader of", "Scandinavians Let Loose"],
   },
   {
     imageUrl: bartolleImage,
     firstName: "Owner",
     lastName: "bartolle",
-    positions: ["Leader of", "Scandinavian Let Loose"],
+    positions: ["Leader of", "Scandinavians Let Loose"],
   },
 ];
 
@@ -49,11 +49,9 @@ onMounted(() => {
   <section id="team" class="container lg:w-[75%] py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-        Main Staff
+        Head Admins
       </h2>
-      <h2 class="text-3xl md:text-4xl text-center font-bold">
-        The SLL Main Staff
-      </h2>
+      <h2 class="text-3xl md:text-4xl text-center font-bold"></h2>
     </div>
 
     <div

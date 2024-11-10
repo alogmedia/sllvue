@@ -15,20 +15,21 @@ import ServerDetails from "@/components/ui/server-details/serverDetails.vue";
     >
       <div class="text-center space-y-8">
         <div
-          class="max-w-screen-md mx-auto text-center text-5xl md:text-6xl font-bold"
+          class="max-w-screen-md mx-auto text-center text-2xl md:text-4xl font-bold"
         >
           <h1>
-            Scandinavian
+            -=Scandinavians Let Loose=-<br />
             <span
-              class="text-transparent bg-gradient-to-r from-[#facc15] to-primary bg-clip-text"
+              class="text-transparent bg-gradient-to-r from-[#facc15] to-primary bg-clip-text md:text-3xl"
               style="color: #facc15"
-              >Let Loose
+              >#1 SLL- Offensive ONLY
             </span>
           </h1>
         </div>
 
         <p class="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-          Join the ranks, soldier! Stand with us and fight for victory!
+          Join the ranks, soldier! <br />We start every day at 19:00 CET
+          <br />Stand with us and fight for victory!
         </p>
 
         <div class="space-y-4 md:space-y-0 md:space-x-4">

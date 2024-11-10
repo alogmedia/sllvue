@@ -1,6 +1,6 @@
 <template>
   <div v-if="server" class="serverdetails">
-    <strong>Players Online</strong>
+    <strong>Soldiers playing on our battlefield right now</strong>
     <p class="players">
       <span :class="playerCountColor"> {{ server.players }} </span> /
       {{ server.maxPlayers }}
@@ -9,6 +9,7 @@
 </template>
 
 <script setup lang="ts">
+// Adding a dynamic server name updating according to the server title.
 import { ref, computed, onMounted } from "vue";
 
 interface ServerDetails {
