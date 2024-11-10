@@ -1,6 +1,7 @@
 <script setup lang="ts">
 /*import { ChevronsDown } from "lucide-vue-next";*/
 import Separator from "./ui/separator/Separator.vue";
+import icon from "@/assets/icon.ico";
 </script>
 
 <template>
@@ -12,7 +13,7 @@ import Separator from "./ui/separator/Separator.vue";
         <div class="col-span-full xl:col-span-2">
           <a href="#" class="flex font-bold items-center">
             <img
-              src="/src/assets/icon.ico"
+              :src="icon"
               class="from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 text-white"
             />
 

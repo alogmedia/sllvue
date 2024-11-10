@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-
+import soldierImage from "@/assets/soldier.svg";
+import soldier7Image from "@/assets/soldier7.svg";
 interface HowItWorksProps {
   badgeTitle: string;
   title: string;
@@ -15,28 +16,28 @@ const HowItWorksList: HowItWorksProps[] = [
     title: "Make a Difference with Every Deployment",
     description:
       "In Hell Let Loose it is important to make a difference with every deployment. We are a community that values teamwork and communication.",
-    image: "/src/assets/soldier.svg",
+    image: soldierImage,
   },
   {
     badgeTitle: "2",
     title: "Create an Impact with Every Choice",
     description:
       "You can have an impact with every choice you make, whether it is choosing the right class, the right weapon, or the right strategy.",
-    image: "/src/assets/soldier7.svg",
+    image: soldier7Image,
   },
   {
     badgeTitle: "3",
     title: "Communicate and Coordinate",
     description:
       "Communication is key in Hell Let Loose. We try to communicate when we play together and share tips and tricks to the best of our ability.",
-    image: "/src/assets/soldier.svg",
+    image: soldierImage,
   },
   {
     badgeTitle: "4",
     title: "Learn and Improve",
     description:
       "Wether you are a new player or a veteran, we are always looking for ways to improve our gameplay and our community. Anyone is welcome to join us.",
-    image: "/src/assets/soldier7.svg",
+    image: soldier7Image,
   },
 ];
 </script>

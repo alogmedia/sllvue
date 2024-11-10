@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import killixImage from "@/assets/killix.webp";
+import bartolleImage from "@/assets/bartolle.webp";
 import { Card, CardContent, CardHeader, CardTitle } from /*   CardFooter,
  */ "@/components/ui/card";
 
@@ -22,13 +24,13 @@ interface TeamProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "/src/assets/killix.webp",
+    imageUrl: killixImage,
     firstName: "Owner",
     lastName: "Killix",
     positions: ["Leader of", "Scandinavian Let Loose"],
   },
   {
-    imageUrl: "/src/assets/bartolle.webp",
+    imageUrl: bartolleImage,
     firstName: "Owner",
     lastName: "bartolle",
     positions: ["Leader of", "Scandinavian Let Loose"],

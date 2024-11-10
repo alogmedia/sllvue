@@ -66,11 +66,9 @@ const FAQList: FAQProps[] = [
 
     <h3 class="font-medium mt-4">
       Still have questions?
-      <a href="#" class="text-muted-foreground">
-        <a href="https://discord.gg/scanhll" class="underline"
-          >Join our discord!</a
-        >
-      </a>
+      <a href="https://discord.gg/scanhll" class="underline"
+        >Join our discord!</a
+      >
     </h3>
   </section>
 </template>
