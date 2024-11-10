@@ -61,7 +61,12 @@ import icon from "@/assets/icon.ico";
         <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Socials</h3>
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> TikTok </a>
+            <a
+              href="https://www.tiktok.com/@scanhll"
+              class="opacity-60 hover:opacity-100"
+            >
+              TikTok
+            </a>
           </div>
 
           <div>
@@ -69,7 +74,12 @@ import icon from "@/assets/icon.ico";
           </div>
 
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> YouTube </a>
+            <a
+              href="https://www.youtube.com/@scanhll"
+              class="opacity-60 hover:opacity-100"
+            >
+              YouTube
+            </a>
           </div>
         </div>
       </div>
