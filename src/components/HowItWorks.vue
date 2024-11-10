@@ -65,11 +65,11 @@ onMounted(() => {
   <section id="features" class="container py-24 sm:py-32">
     <div class="text-center mb-8">
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
-        How It Works
+        Operations
       </h2>
 
       <h2 class="text-3xl md:text-4xl text-center font-bold">
-        Step-by-Step Process
+        The way we do it!
       </h2>
     </div>
 
