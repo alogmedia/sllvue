@@ -16,20 +16,22 @@ import {
 import {
   Sheet,
   SheetContent,
+  /*
   SheetFooter,
+  */
   SheetHeader,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator";
 
 import { Menu } from "lucide-vue-next";
 /*
-import GithubIcon from "@/icons/GithubIcon.vue";*/
+import { Separator } from "@/components/ui/separator";
+import GithubIcon from "@/icons/GithubIcon.vue";
 import ToggleTheme from "./ToggleTheme.vue";
-
+*/
 interface RouteProps {
   href: string;
   label: string;
