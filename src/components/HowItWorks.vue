@@ -1,8 +1,10 @@
 <script setup lang="ts">
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { onMounted } from "vue";
 import soldierImage from "@/assets/soldier.svg";
 import soldier7Image from "@/assets/soldier7.svg";
+
 interface HowItWorksProps {
   badgeTitle: string;
   title: string;
@@ -40,6 +42,23 @@ const HowItWorksList: HowItWorksProps[] = [
     image: soldier7Image,
   },
 ];
+
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("slide-in");
+        }
+      });
+    },
+    { threshold: 0.2 },
+  );
+
+  document.querySelectorAll(".animation-item").forEach((item) => {
+    observer.observe(item);
+  });
+});
 </script>
 
 <template>
@@ -61,8 +80,9 @@ const HowItWorksList: HowItWorksProps[] = [
         ) in HowItWorksList"
         :key="title"
         :class="[
-          'flex mb-8 items-center',
-          { ' flex-row-reverse': index % 2 !== 0 },
+          'flex mb-8 items-center animation-item',
+          { 'flex-row-reverse': index % 2 !== 0 },
+          index % 2 === 0 ? 'slide-left' : 'slide-right',
         ]"
       >
         <Card class="h-full bg-transparent border-0 shadow-none">
@@ -84,18 +104,36 @@ const HowItWorksList: HowItWorksProps[] = [
         <img
           :src="image"
           :alt="`Image describing ${title} `"
-          className="w-[150px]  md:w-[250px] lg:w-[300px] mx-auto -scale-x-100 "
+          class="w-[150px] md:w-[250px] lg:w-[300px] mx-auto -scale-x-100"
           style="border-radius: 50%"
         />
         <div
           :class="[
-            '-z-10 absolute right-0 w-44 h-72  lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl',
-            {
-              'left-0': index % 2 !== 0,
-            },
+            '-z-10 absolute right-0 w-44 h-72 lg:w-64 lg:h-80 rounded-full bg-primary/15 dark:bg-primary/10 blur-3xl',
+            { 'left-0': index % 2 !== 0 },
           ]"
         ></div>
       </div>
     </div>
   </section>
 </template>
+
+<style scoped>
+.animation-item {
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slide-left {
+  transform: translateX(-100px);
+}
+
+.slide-right {
+  transform: translateX(100px);
+}
+
+.slide-in {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+</style>

@@ -1,26 +1,15 @@
 <script setup lang="ts">
 import killixImage from "@/assets/killix.webp";
 import bartolleImage from "@/assets/bartolle.webp";
-import { Card, CardContent, CardHeader, CardTitle } from /*   CardFooter,
- */ "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { onMounted } from "vue";
 
-/* import LinkedInIcon from "@/icons/LinkedInIcon.vue";
-import GithubIcon from "@/icons/GithubIcon.vue";
-import XIcon from "@/icons/XIcon.vue";
- */
 interface TeamProps {
   imageUrl: string;
   firstName: string;
   lastName: string;
   positions: string[];
-  /*   socialNetworks: SocialNetworkProps[];
-   */
 }
-
-/* interface SocialNetworkProps {
-  name: string;
-  url: string;
-} */
 
 const teamList: TeamProps[] = [
   {
@@ -37,18 +26,23 @@ const teamList: TeamProps[] = [
   },
 ];
 
-/* const socialIcon = (socialName: string) => {
-  switch (socialName) {
-    case "LinkedIn":
-      return LinkedInIcon;
+onMounted(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+          observer.unobserve(entry.target); // Stop observing once faded in
+        }
+      });
+    },
+    { threshold: 0.1 },
+  );
 
-    case "Github":
-      return GithubIcon;
-
-    case "X":
-      return XIcon;
-  }
-}; */
+  document.querySelectorAll(".fade-item").forEach((item) => {
+    observer.observe(item);
+  });
+});
 </script>
 
 <template>
@@ -57,7 +51,6 @@ const teamList: TeamProps[] = [
       <h2 class="text-lg text-primary text-center mb-2 tracking-wider">
         Main Staff
       </h2>
-
       <h2 class="text-3xl md:text-4xl text-center font-bold">
         The SLL Main Staff
       </h2>
@@ -68,16 +61,9 @@ const teamList: TeamProps[] = [
       style="display: flex; justify-content: center"
     >
       <Card
-        v-for="{
-          imageUrl,
-          firstName,
-          lastName,
-          positions,
-          /*           socialNetworks,
-           */
-        } in teamList"
+        v-for="{ imageUrl, firstName, lastName, positions } in teamList"
         :key="imageUrl"
-        class="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg"
+        class="bg-muted/60 dark:bg-card flex flex-col h-full overflow-hidden group/hoverimg fade-item"
       >
         <CardHeader class="p-0 gap-0">
           <div class="h-full overflow-hidden">
@@ -87,9 +73,8 @@ const teamList: TeamProps[] = [
               class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
             />
           </div>
-          <CardTitle class="py-6 pb-4 px-6"
-            >{{ firstName }}
-            <span class="text-primary">{{ lastName }}</span>
+          <CardTitle class="py-6 pb-4 px-6">
+            {{ firstName }} <span class="text-primary">{{ lastName }}</span>
           </CardTitle>
         </CardHeader>
 
@@ -97,26 +82,24 @@ const teamList: TeamProps[] = [
           v-for="(position, index) in positions"
           :key="index"
           :class="{
-            'pb-0 text-muted-foreground ': true,
+            'pb-0 text-muted-foreground': true,
             'pb-4': index === positions.length - 1,
           }"
         >
           {{ position }}<span v-if="index < positions.length - 1">,</span>
         </CardContent>
-
-        <!--  <CardFooter class="space-x-4 mt-auto">
-          <a
-            v-for="{ name, url } in socialNetworks"
-            key="name"
-            :href="url"
-            target="_blank"
-            class="hover:opacity-80 transition-all"
-            :aria-label="`Visit our ${name} page`"
-          >
-            <component :is="socialIcon(name)" />
-          </a>
-        </CardFooter> -->
       </Card>
     </div>
   </section>
 </template>
+
+<style scoped>
+.fade-item {
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.fade-in {
+  opacity: 1 !important;
+}
+</style>
