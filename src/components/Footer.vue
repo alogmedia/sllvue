@@ -70,7 +70,12 @@ import icon from "@/assets/icon.ico";
           </div>
 
           <div>
-            <a href="#" class="opacity-60 hover:opacity-100"> Discord </a>
+            <a
+              href="https://discord.gg/scanhll"
+              class="opacity-60 hover:opacity-100"
+            >
+              Discord
+            </a>
           </div>
 
           <div>
