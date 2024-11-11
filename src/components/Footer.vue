@@ -57,6 +57,12 @@ import icon from "@/assets/icon.ico";
           <div>
             <a href="#faq" class="opacity-60 hover:opacity-100"> FAQ </a>
           </div>
+
+          <div>
+            <a href="/privacy-policy" class="opacity-60 hover:opacity-100">
+              Privacy Policy
+            </a>
+          </div>
         </div>
 
         <div class="flex flex-col gap-2">
