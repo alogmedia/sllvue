@@ -106,6 +106,7 @@ onMounted(() => {
           :alt="`Image describing ${title} `"
           class="w-[150px] md:w-[250px] lg:w-[300px] mx-auto -scale-x-100"
           style="border-radius: 50%"
+          alt="soldier"
         />
         <div
           :class="[

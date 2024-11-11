@@ -67,7 +67,7 @@ onMounted(() => {
           <div class="h-full overflow-hidden">
             <img
               :src="imageUrl"
-              alt=""
+              alt="admin image"
               class="w-full aspect-square object-cover saturate-0 transition-all duration-200 ease-linear size-full group-hover/hoverimg:saturate-100 group-hover/hoverimg:scale-[1.01]"
             />
           </div>

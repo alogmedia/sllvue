@@ -92,7 +92,11 @@ const isOpen = ref<boolean>(false);
     }"
   >
     <a href="/">
-      <img src="/src/assets/logo.png" width="300px" class="titlelogo"
+      <img
+        src="/src/assets/logo.png"
+        width="300px"
+        class="titlelogo"
+        alt="Scandinavians Let Loose main logo"
     /></a>
     <!-- Mobile -->
     <div class="flex items-center lg:hidden">

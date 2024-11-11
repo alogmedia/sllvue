@@ -22,7 +22,11 @@ import DiscordIcon from "@/icons/DiscordIcon.vue";
         >
           <CardHeader>
             <CardTitle class="text-4xl md:text-5xl font-bold">
-              <Component class="w-20 h-20 m-auto mb-4" :is="DiscordIcon" />
+              <Component
+                class="w-20 h-20 m-auto mb-4"
+                :is="DiscordIcon"
+                alt="discord icon"
+              />
               Ready to join the
               <span
                 class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"

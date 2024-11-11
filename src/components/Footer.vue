@@ -15,6 +15,7 @@ import icon from "@/assets/icon.ico";
             <img
               :src="icon"
               class="from-primary via-primary/70 to-primary rounded-lg w-9 h-9 mr-2 text-white"
+              alt="Scandinavians Let Loose icon"
             />
 
             <h3 class="text-2xl">Scandinavians Let Loose</h3>
