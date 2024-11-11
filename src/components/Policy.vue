@@ -20,11 +20,6 @@ import {
             <CardTitle class="text-4xl md:text-5xl font-bold">
               <Component class="w-20 h-20 m-auto mb-4" alt="discord icon" />
               Privacy Policy
-              <span
-                class="text-transparent bg-gradient-to-r from-[#D247BF] to-primary bg-clip-text"
-              >
-                ranks?
-              </span>
             </CardTitle>
           </CardHeader>
           <CardContent class="lg:w-[80%] text-xl text-muted-foreground">
