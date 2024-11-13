@@ -26,9 +26,9 @@ import {
             <strong>Privacy Policy Last updated: 11/11/2024</strong>
 
             <p>
-              Thank you for visiting website. Your privacy is important to us.
-              This Privacy Policy explains what information we collect, how we
-              use it, and your rights regarding your data when you visit our
+              Thank you for visiting our website. Your privacy is important to
+              us. This Privacy Policy explains what information we collect, how
+              we use it, and your rights regarding your data when you visit our
               site.
             </p>
 

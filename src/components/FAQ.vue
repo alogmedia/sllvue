@@ -35,19 +35,19 @@ const FAQList: FAQProps[] = [
     question: "Do you offer VIP?",
     answer:
       "Yes, we offer VIP for our server, if you help us seed you get 5 Days of VIP, Donators get lifetime VIP!",
-    value: "item-5",
+    value: "item-4",
   },
 
   {
     question: "What role can I play?",
     answer:
       "Anything, whatever you feel like, wether it is Armor Squad or Infantry, we have a spot for you.",
-    value: "item-4",
+    value: "item-5",
   },
   {
     question: "Do you play competitively or just for fun?",
     answer: "We play for fun, but we do have a competitive team in the works.",
-    value: "item-5",
+    value: "item-6",
   },
 ];
 
