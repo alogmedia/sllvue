@@ -23,30 +23,6 @@ import icon from "@/assets/icon.ico";
         </div>
 
         <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Contact</h3>
-          <div>
-            <a
-              href="https://discord.gg/scanhll"
-              class="opacity-60 hover:opacity-100"
-            >
-              Discord
-            </a>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-2">
-          <h3 class="font-bold text-lg">Server</h3>
-          <div>
-            <a
-              href="https://www.battlemetrics.com/servers/hll/22151086"
-              class="opacity-60 hover:opacity-100"
-            >
-              SLL BattleMetrics
-            </a>
-          </div>
-        </div>
-
-        <div class="flex flex-col gap-2">
           <h3 class="font-bold text-lg">Help</h3>
           <div>
             <a href="#community" class="opacity-60 hover:opacity-100">
@@ -101,6 +77,33 @@ import icon from "@/assets/icon.ico";
             Patreon
             </a>
           </div>-->
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-bold text-lg">Contact</h3>
+          <div>
+            <a
+              href="https://discord.gg/scanhll"
+              class="opacity-60 hover:opacity-100"
+            >
+              Discord
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col gap-2">
+          <h3 class="font-bold text-lg">Other</h3>
+          <div>
+            <a
+              href="https://www.battlemetrics.com/servers/hll/22151086"
+              class="opacity-60 hover:opacity-100"
+            >
+              SLL BattleMetrics
+            </a>
+          </div>
+          <div>
+            <a href="/artillery" class="opacity-60 hover:opacity-100">
+              Artillery Calculator
+            </a>
+          </div>
         </div>
       </div>
 

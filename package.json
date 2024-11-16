@@ -22,7 +22,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate-pwa-assets": "pwa-assets-generator"
   },
   "dependencies": {
     "@selemondev/vue3-marquee": "^0.0.8",
@@ -43,11 +44,13 @@
   },
   "devDependencies": {
     "@types/node": "^20.14.5",
+    "@vite-pwa/assets-generator": "^0.2.6",
     "@vitejs/plugin-vue": "^5.0.5",
     "autoprefixer": "^10.4.19",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.4.5",
     "vite": "^5.3.1",
+    "vite-plugin-pwa": "^0.21.0",
     "vue-tsc": "^2.0.21"
   }
 }
